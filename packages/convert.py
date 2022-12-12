@@ -1,6 +1,6 @@
 import luigi 
 import json 
-from pakage.scrap import scrap
+from packages.scrap import scrap
 import csv 
 
 
