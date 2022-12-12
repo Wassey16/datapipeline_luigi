@@ -1,4 +1,4 @@
-# datapipeline_luigi
+# luigi_datapipeline 
 A webpage about nyc station is scrapped. Its data converted from json to csv, cleaned and exported into a table in a postgresql data base.
 
 ### Requirements:
