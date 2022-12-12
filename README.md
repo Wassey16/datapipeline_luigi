@@ -15,3 +15,14 @@ to run task once in terminal:
 ```bash
 python3 main.py
 ```
+to run as a scheduled task in terminal:
+```bash
+python3 cron.py
+```
+ 
+### Functionality:
+* luigi task `scrap()` extracts the data in cleaned up json format.
+* luigi task `convert()` pretifies and changes the format from json to csv.
+* luigi task `dataclean()` uses pandas to cleanup the data. 
+* luigi task `datapush()` pushes data into a table in postgresql database present on local machine.
+
