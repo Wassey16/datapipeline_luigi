@@ -15,6 +15,11 @@ to run task once in terminal:
 ```bash
 python3 main.py
 ```
+to run test to check the success of luigi task in terminal:
+```bash
+python3 test.py 
+```
+
 to run as a scheduled task in terminal:
 ```bash
 python3 cron.py
