@@ -22,9 +22,15 @@ python3 test.py
 
 to run as a scheduled task in terminal:
 ```bash
-python3 cron.py
+cd scripts 
+chmod +x cron.sh
+EDITOR=nano crontab -e
 ```
- 
+this will open crontab write the following command in the editor to run job every day at 15:15 
+```bash
+15 15 * * * source complete_path_to/luigi_datapipeline/scripts/cron.sh
+```
+
 ### Functionality:
 * luigi task `scrap()` extracts the data in cleaned up json format.
 * luigi task `convert()` pretifies and changes the format from json to csv.
