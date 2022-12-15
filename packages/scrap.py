@@ -9,7 +9,7 @@ class scrap(luigi.Task):
     """
 
     def output(self):
-        return luigi.LocalTarget("nycbikedata.json")
+        return luigi.LocalTarget("tmp_files/nycbikedata.json")
 
     def run(self):
         headers = {

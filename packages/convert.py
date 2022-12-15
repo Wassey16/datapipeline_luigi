@@ -10,7 +10,7 @@ class convert(luigi.Task):
 
 
     def output(self):
-            return luigi.LocalTarget("nycbikedata.csv")
+            return luigi.LocalTarget("tmp_files/nycbikedata.csv")
 
             
     def run(self):
