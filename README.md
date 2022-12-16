@@ -35,7 +35,7 @@ python3 test.py
 to run as a cronjob task give your path to `cd` in cron.sh and in new terminal:
 ```bash
 chmod +x scripts/cron.sh
-EDITOR=nano crontab -e
+EDITOR=nano crontab -e "in your root dir"
 ```
 this will open crontab write the following command in the editor to run job every day at 15:15 
 ```bash
