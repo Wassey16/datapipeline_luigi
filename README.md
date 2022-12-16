@@ -11,6 +11,18 @@ A webpage about nyc station is scrapped. Its data converted from json to csv, cl
 
  
 ### Running:
+to run luig UI in terminal:
+```bash
+sudo ufw allow 8082/tcp
+sudo sh -c ". my_venv/bin/activate ;luigid --background --port 8082 
+luigid --port 8082 > /dev/null 2> /dev/null &
+python -m luigi --module main datapush
+```
+to see the UI in broweser type `http//localhost:8082` and to kill luigid in terminal:
+```bash 
+sudo netstat -lpn |grep :8080
+kill -9 `your_procces_id`
+```
 to run task once in terminal:
 ```bash
 python3 main.py
