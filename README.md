@@ -20,8 +20,8 @@ python -m luigi --module main datapush
 ```
 to see the UI in broweser type `http//localhost:8082` and to kill luigid in terminal:
 ```bash 
-sudo netstat -lpn |grep :8080
-kill -9 `your_procces_id`
+sudo netstat -lpn |grep :8082
+kill -9 "your_procces_id"
 ```
 to run task once in terminal:
 ```bash
