@@ -20,15 +20,14 @@ to run test to check the success of luigi task in terminal:
 python3 test.py 
 ```
 
-to run as a scheduled task in terminal:
+to run as a cronjob task give your path to `cd` in cron.sh and in new terminal:
 ```bash
-cd scripts 
-chmod +x cron.sh
+chmod +x scripts/cron.sh
 EDITOR=nano crontab -e
 ```
 this will open crontab write the following command in the editor to run job every day at 15:15 
 ```bash
-15 15 * * * source complete_path_to/luigi_datapipeline/scripts/cron.sh
+15 15 * * * /bin/bash complete_path_to/luigi_datapipeline/scripts/cron.sh
 ```
 
 ### Functionality:

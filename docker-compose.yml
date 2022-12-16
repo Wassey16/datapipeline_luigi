@@ -13,9 +13,9 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=password
-      - APP_DB_USER=${DB_USER}
-      - APP_DB_PASS=${DB_PASSWORD}
-      - APP_DB_NAME=${DB_NAME}
+      - APP_DB_USER=bob
+      - APP_DB_PASS=admin
+      - APP_DB_NAME=mydb
     volumes:
       - ./db:/docker-entrypoint-initdb.d/
     ports:

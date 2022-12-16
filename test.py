@@ -37,7 +37,7 @@ def datacheck():
 
 class LuigiTest(unittest.TestCase):
     def test_datapush(self):
-        df=pd.read_csv('formated.csv')
+        df=pd.read_csv('tmp/formated.csv')
         x=df.iloc[0]
         y = x.astype(str).values.flatten().tolist().__str__()
         y=y.replace('[','').replace(']','').replace("'",'')
